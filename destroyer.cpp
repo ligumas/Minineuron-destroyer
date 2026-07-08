@@ -3,9 +3,12 @@
 
 namespace fs = std::filesystem; // lyhentaa
 int main() {
+#ifdef _WIN32 
 
-
-const char* home = getenv("USERPROFILE"); // pista kayttajan home muutujaan
+const char* home = getenv("USERPROFILE");
+#else 
+const char* home = getenv("HOME");
+#endif
 if (home) 
 
 {

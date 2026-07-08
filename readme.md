@@ -1,1 +1,0 @@
-use this if u dont like mini neuron built it yourself
